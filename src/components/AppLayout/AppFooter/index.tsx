@@ -17,7 +17,7 @@ function AppFooter() {
         </div>
         <div className="text-center border-t tracking-wider border-white/10 pt-8 ">
           <p className="text-base leading-5 text-gray-600">
-            &copy; 2024 Copyright: jhnrmss
+            Designed & Built by John Romie Reyes
           </p>
         </div>
       </div>

@@ -1,5 +1,7 @@
+import { BsTelephoneOutbound } from "react-icons/bs";
 import { FaHtml5, FaCss3Alt, FaReact, FaSourcetree, FaJira, FaGitAlt } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
+import { RiMailSendLine, RiMessengerLine } from "react-icons/ri";
 import { SiTailwindcss, SiRedux, SiReactquery, SiAxios } from "react-icons/si";
 import { TbBrandJavascript, TbGhost2 } from "react-icons/tb";
 
@@ -110,3 +112,21 @@ export const skillSets = [
   iconStyle: "h-5 w-5 text-indigo-500",
 },
 ];
+
+export const contactData = [
+  {
+		Icon: BsTelephoneOutbound ,
+		ContactTitle: "+63 955 0516 084",
+		Link: "tel:+63 955 0516 084",
+	},
+	{
+		Icon: RiMailSendLine,
+		ContactTitle: "johnromie37@gmail.com",
+		Link: "mailto:johnromie37@gmail.com",
+	},
+  {
+		Icon: RiMessengerLine ,
+		ContactTitle: "Romie55",
+		Link: "https://m.me/Romie55",
+	},
+]
