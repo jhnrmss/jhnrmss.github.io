@@ -15,7 +15,7 @@ function HeroSection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
         <div className=" flex flex-col space-y-4 ">
           <p className="text-4xl font-extrabold tracking-wider text-gray-700">
-            About Me
+            Get to know me!
           </p>
           <p className="text-base tracking-wider text-gray-600">
             Hi there! I&apos;m John Romie, and I love creating stuff for the
@@ -26,7 +26,12 @@ function HeroSection() {
           <p className="text-base tracking-wider text-gray-600">
             Fast-forward to 2022, and I&apos;ve been lucky enough to work at
             Hooli Software, where I focus on making user-friendly web apps for
-            various clients."
+            various clients.
+          </p>
+          <p className="text-base tracking-wider text-gray-600">
+            I&apos;m open to Job opportunities where I can contribute, learn and
+            grow. If you have a good opportunity that matches my skills and
+            experience then don&apos;t hesitate to contact me.
           </p>
           <p className="text-base tracking-wider text-gray-600">
             Here are a few technologies I&apos;ve been working with recently:
@@ -41,7 +46,7 @@ function HeroSection() {
           </div>
         </div>
         <div className=" items-center justify-center mt-6 lg:mt-0 hidden sm:flex">
-          <Avatar className="h-[16rem] w-auto outline-8 outline-double outline-offset-4 outline-green-300 ">
+          <Avatar className="h-[16rem] w-auto outline-8 outline-double outline-offset-4 outline-green-700 ">
             <AvatarImage src={meImage} alt="me" />
           </Avatar>
         </div>

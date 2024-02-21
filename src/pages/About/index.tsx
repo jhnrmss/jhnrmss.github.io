@@ -8,8 +8,8 @@ function About() {
     <div>
       <HeroSection />
       <WorkExperience />
-      <Education />
       <MySkills />
+      <Education />
     </div>
   );
 }

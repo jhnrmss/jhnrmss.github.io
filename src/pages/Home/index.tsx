@@ -1,4 +1,4 @@
-import progImage from "../../assets/programming.jpg";
+import progImage from "../../assets/programming.png";
 import { Button } from "../../components/AppButton/button";
 import resume from "../../assets/john-romie-resume.pdf";
 import { useNavigate } from "react-router";

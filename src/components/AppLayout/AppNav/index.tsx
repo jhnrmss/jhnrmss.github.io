@@ -83,20 +83,19 @@ export default function AppNav() {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 pb-4 pt-2">
               {navigation.map((navigation) => (
-                <Disclosure.Button
-                  key={navigation.name + "-topbar"}
-                  as="a"
-                  href={navigation.href}
-                  className={cn(
-                    "block hover:bg-gray-200 tracking-wider hover:text-green-700 py-2 pl-3 pr-4 text-base font-medium text-gray-700",
-                    activeTab === navigation.href ||
-                      (location.pathname === "/" && navigation.href === "/")
-                      ? "border-l-4 border-green-700 bg-gray-200 text-green-700"
-                      : "text-gray-700"
-                  )}
-                >
-                  {navigation.name}
-                </Disclosure.Button>
+                <NavLink key={navigation.name + "-topbar"} to={navigation.href}>
+                  <Disclosure.Button
+                    className={cn(
+                      "block hover:bg-gray-200 tracking-wider hover:text-green-700 py-2 pl-3 pr-4 text-base font-medium text-gray-700",
+                      activeTab === navigation.href ||
+                        (location.pathname === "/" && navigation.href === "/")
+                        ? "border-l-4 border-green-700 bg-gray-200 text-green-700"
+                        : "text-gray-700"
+                    )}
+                  >
+                    {navigation.name}
+                  </Disclosure.Button>
+                </NavLink>
               ))}
             </div>
           </Disclosure.Panel>

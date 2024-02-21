@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../../components/AppAccordion/accordion";
-import { workExperienceData } from "../../../api";
+import { workExperienceData } from "../../../api/Personal";
 
 function WorkExperience() {
   return (

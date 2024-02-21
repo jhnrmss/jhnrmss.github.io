@@ -1,4 +1,4 @@
-import { skillSets } from "../../../api";
+import { skillSets } from "../../../api/Personal";
 import { Badge } from "../../../components/AppBadge/badge";
 
 function MySkills() {
