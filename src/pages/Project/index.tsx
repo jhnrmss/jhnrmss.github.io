@@ -12,7 +12,7 @@ function Projects() {
           created with each project containing its own case study.
         </p>
       </div>
-      <div className="space-y-20">
+      <div>
         <ProjectCards />
       </div>
     </div>

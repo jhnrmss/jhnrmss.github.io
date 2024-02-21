@@ -4,13 +4,15 @@ import { Button } from "../../../components/AppButton/button";
 import { IoIosSend } from "react-icons/io";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-
+import { useNavigate } from "react-router";
+import { toast } from "react-hot-toast";
 function ContactForm() {
   const serviceId = import.meta.env.VITE_SERVICE_ID;
   const templateId = import.meta.env.VITE_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_PUBLIC_KEY;
   const formElement = useRef<HTMLFormElement>(null);
-  console.log(formElement.current);
+  const navigate = useNavigate();
+
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     emailjs
@@ -19,10 +21,12 @@ function ContactForm() {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast.success("Message sent!");
+          navigate("/");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          toast.error("Message not sent!");
+          console.log(error);
         }
       );
   };
@@ -47,7 +51,7 @@ function ContactForm() {
 
         <Input
           id="Email"
-          type="text"
+          type="email"
           name="user_email"
           placeholder="Enter your email"
           className="placeholder:text-gray-400 border-gray-400 outline-none ring-0"
