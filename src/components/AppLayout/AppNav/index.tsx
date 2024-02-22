@@ -80,13 +80,13 @@ export default function AppNav() {
               </div>
             </div>
           </div>
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="sm:hidden ">
             <div className="space-y-1 pb-4 pt-2">
               {navigation.map((navigation) => (
                 <NavLink key={navigation.name + "-topbar"} to={navigation.href}>
                   <Disclosure.Button
                     className={cn(
-                      "block hover:bg-gray-200 tracking-wider hover:text-green-700 py-2 pl-3 pr-4 text-base font-medium text-gray-700",
+                      "block w-full text-left hover:bg-gray-200 tracking-wider hover:text-green-700 py-2 pl-3 pr-4 text-base font-medium text-gray-700",
                       activeTab === navigation.href ||
                         (location.pathname === "/" && navigation.href === "/")
                         ? "border-l-4 border-green-700 bg-gray-200 text-green-700"
