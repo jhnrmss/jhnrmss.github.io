@@ -4,7 +4,7 @@ import AppNav from "./AppNav";
 import AppFooter from "./AppFooter";
 const AppLayout: React.FC = () => {
   return (
-    <div className="bg-gray-50 h-full w-full">
+    <div className="bg-white h-full w-full">
       <AppNav />
       <main className="py-5 pt-9 px-12 lg:px-24">
         <div className="py-5 px-4 sm:px-6 lg:px-8">
