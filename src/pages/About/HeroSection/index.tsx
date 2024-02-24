@@ -46,7 +46,7 @@ function HeroSection() {
           </div>
         </div>
         <div className=" items-center justify-center mt-6 lg:mt-0 hidden sm:flex">
-          <Avatar className="h-[16rem] w-auto outline-8 outline-double outline-offset-4 outline-green-700 ">
+          <Avatar className="animate-jello h-[16rem] w-auto outline-8 outline-double  outline-green-200 ">
             <AvatarImage src={meImage} alt="me" />
           </Avatar>
         </div>
